@@ -154,9 +154,14 @@ def pregunta_04():
     ]
 
     """
+    data = read_data(file_path)
+    dict_count = {}
+    for line in data:
+        month = line[2].split("-")[1]
+        dict_count[month] = dict_count.get(month, 0) + 1
+    list_count = sorted([(k, v) for k, v in dict_count.items()])
     
-    
-    return
+    return list_count
 
 
 def pregunta_05():
