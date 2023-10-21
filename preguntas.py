@@ -13,6 +13,8 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 """
 file_path = "data.csv"
 
+
+
 def read_data(path):
     with open(file_path, "r") as file:
         data = file.readlines()
